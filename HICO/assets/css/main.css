@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
-
-/*
-	Minimaxing by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1073,9 +1065,9 @@
 
 	body {
 		font-size: 13.5pt;
-		font-family: sans-serif;
+		font-family: Helvetica;
 		background-color: #e3e9dc;
-		font-family: 'Ubuntu Condensed', sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #878e83;
 		letter-spacing: -1px;
 	}
@@ -1279,7 +1271,6 @@
 				background-image: linear-gradient(top, #008dab, #000099);
 				background-color: #000099;
 				position: relative;
-				height: 100%;
 				width: 100%;
 			}
 
@@ -1287,6 +1278,7 @@
 					display: flex;
 					flex-direction: row;
 					justify-content: space-between;
+					margin-bottom: 5px
 				}
 
 				#logo-container h1 {
@@ -1307,6 +1299,9 @@
 					height: 97px;
 				}
 
+				#logo {
+					text-align: center;
+				}
 				#logo h1:first-of-type {
 					font-size: 45px;
 				}
@@ -1329,11 +1324,23 @@
 					display: inline-block;
 				}
 
+				#logo-container #moto-container {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					text-align: center;
+				}
+
+				#logo-container #moto {
+					font-family:Monotype Corsiva;
+					font-size: 45px; 
+				}
+
 				#header nav {
 					right: 40px;
 					top: 1px;
 					line-height: 40px;
-					font-size: 1.3em;
+					font-size: 1em;
 					letter-spacing: -1px;
 				}
 					#header ul {
@@ -1341,14 +1348,14 @@
 						margin: 0;
 						display: flex;
 						flex-direction: row;
-						justify-content: space-between;
+						justify-content: center;
 					}
 
 					#header nav a {
-						display: inline-block;
+						
 						text-decoration: none;
 						color: #fff;
-						padding: 0 25px 0 25px;
+						padding: 0 5px;
 						outline: 0;
 					}
 
@@ -1358,23 +1365,47 @@
 						border-radius: 10px;
 						border: solid 1px #006e8b;
 						box-shadow: inset 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-						background-color: #007b9d;
-						margin: 0 auto 10px;
+						background-image: -moz-linear-gradient(top, #000099, #008dab);
+						background-image: -webkit-linear-gradient(top, #000099, #008dab);
+						background-image: -ms-linear-gradient(top, #000099, #008dab);
+						background-image: linear-gradient(top, #000099, #008dab);
+						background-color: #000099;
+					}
+
+					#dropdown span {
+						display: flex;
+						flex-direction: row;
+						color: #fff;
+						margin: 0 5px 0 auto;
+						width: 100%;
+					}
+
+					#dropdown ul {
+						display: flex;
+						flex-direction: column;
+						border-radius: 10px;
+						border: solid 1px #008dab;
+						box-shadow: inset 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+						background-image: -moz-linear-gradient(top, #000099, #008dab);
+						background-image: -webkit-linear-gradient(top, #000099, #008dab);
+						background-image: -ms-linear-gradient(top, #000099, #008dab);
+						background-image: linear-gradient(top, #000099, #008dab);
+						background-color: #000099;
+						margin: 0;
+					}
+
+					#dropdown li {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
 					}
 
 					#dropdown a {
-						display: inline-block;
 						text-decoration: none;
 						color: #fff;
 						padding: 0 25px 0 25px;
 						outline: 0;
-					}
-
-					#dropdown ul {
-						border: solid 1px #006e8b;
-						box-shadow: inset 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-						background-color: #007b9d;
-						margin: 0;
+						margin-right: auto;
 					}
 
 						#header nav a.current-page-item {
@@ -1391,7 +1422,7 @@
 							background-image: -webkit-linear-gradient(top, #0782a0, #077d9b);
 							background-image: -ms-linear-gradient(top, #0782a0, #077d9b);
 							background-image: linear-gradient(top, #0782a0, #077d9b);
-							background-color: #0882a1;
+							background-color: #000099;
 							box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.05), 0px 0px 5px 1px rgba(255, 255, 255, 0.05);
 						}
 
@@ -1399,7 +1430,7 @@
 
 			#banner-wrapper {
 				background: #c8d2bc url(images/bg1.png);
-				padding: 2em 0;
+				padding: 2em 0 0.666em;
 			}
 
 			#banner {
@@ -1451,16 +1482,122 @@
 				padding: 4em 0;
 			}
 
+			#main .container.main-container{
+				display: flex;
+				flex-direction: row;
+			}
+
+			#main .content-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 5px;
+			}
+
 			#main .content {
-				border: 1px solid #111;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				border: 15px solid #ccc;
 				width: 100%;
 				margin: 5px auto 0;
+				padding: 15px;
+			}
+
+			#main .content img {
+				height: 150px;
+				width: 150px;
+				border: 1px solid #ccc;
+				padding: 2px;
+				margin-right: 15px;
+			}
+
+			#main .content button {
+				height: 27px;
+				width: 150px;
+				border-radius: 10px;
+				color: #fff;
+				background-image: -moz-linear-gradient(top, #008dab, #000099);
+				background-image: -webkit-linear-gradient(top, #008dab, #000099);
+				background-image: -ms-linear-gradient(top, #008dab, #000099);
+				background-image: linear-gradient(top, #008dab, #000099);
+				background-color: #000099;
+				margin: 0 15px 0 auto;
+				text-transform: uppercase;
+			}
+
+			#main .content div:last-child {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.each-section {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+			.each-content {
+				border: 1px solid #000;
+				padding: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				margin: 0 15px;
+				height: 250px;
+				width: 200px;
+			}
+
+			.each-content h4 {
+				height: 36px;
+			}
+
+			.each-content a {
+				margin: 0 auto;
+			}
+
+			.each-content img {
+				height: 100px;
+				width: 100px;
+			}
+
+			.balloon-content.each-content img {
+				height: 125px;
+				width: 100px;
+			}
+
+			.each-content button {
+				height: 27px;
+				width: 150px;
+				border-radius: 10px;
+				color: #fff;
+				background-image: -moz-linear-gradient(top, #008dab, #000099);
+				background-image: -webkit-linear-gradient(top, #008dab, #000099);
+				background-image: -ms-linear-gradient(top, #008dab, #000099);
+				background-image: linear-gradient(top, #008dab, #000099);
+				background-color: #000099;
+				margin: 0 auto;
+				text-transform: uppercase;
 			}
 
 		/* Footer */
 
 			#footer-wrapper {
 				padding: 4em 0;
+			}
+
+			#footer-wrapper #contact-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+			}
+
+			#footer-wrapper span {
+				line-height: 1.5em;
+				width: 100%;
 			}
 
 		/* Copyright */
@@ -1501,23 +1638,7 @@
 
 		/* Header */
 
-			#header {
-				height: 76px;
-			}
-
-				#header h1 {
-					font-size: 2em;
-					line-height: 76px;
-				}
-
-				#header nav {
-					line-height: 74px;
-					font-size: 1.1em;
-				}
-
-					#header nav a {
-						padding: 0 20px 0 20px;
-					}
+		
 
 		/* Banner */
 
@@ -1536,6 +1657,15 @@
 					font-size: 1.4em;
 					bottom: 85px;
 				}
+		/* Main */
+
+			#main .content img {
+				height: 75px;
+				width: 75px;
+				border: 1px solid #ccc;
+				padding: 2px;
+				margin-right: 15px;
+			}
 
 		/* Footer */
 
@@ -1672,7 +1802,6 @@
 					color: #fff;
 					text-align: center;
 					letter-spacing: -1px;
-					
 					opacity: 0.8;
 				}
 
@@ -1680,6 +1809,70 @@
 
 			#main {
 				margin-top: 44px;
+				background: #fff;
+			}
+
+			#main .container.main-container{
+				display: flex;
+				flex-direction: column;
+			}
+
+			#main .content-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 5px;
+				padding: 15px;
+			}
+
+			#main .content-container:first-child {
+				padding-bottom: 0;
+			}
+
+			#main .content-container:last-child {
+				padding-top: 0;
+			}
+
+			#main .content {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				border: 15px solid #ccc;
+				width: 100%;
+				margin: 5px auto 0;
+				padding: 15px;
+			}
+
+			#main .content img {
+				height: 75px;
+				width: 75px;
+				border: 1px solid #ccc;
+				padding: 2px;
+				margin-right: 15px;
+			}
+
+			#main .content button {
+				height: 27px;
+				width: 150px;
+				border-radius: 10px;
+				color: #fff;
+				background-image: -moz-linear-gradient(top, #008dab, #000099);
+				background-image: -webkit-linear-gradient(top, #008dab, #000099);
+				background-image: -ms-linear-gradient(top, #008dab, #000099);
+				background-image: linear-gradient(top, #008dab, #000099);
+				background-color: #000099;
+				margin: 0 15px 0 auto;
+				text-transform: uppercase;
+			}
+
+			#main .content div:last-child {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.balloon-content.each-content img {
+				height: 125px;
+				width: 100px;
 			}
 
 		/* Footer */
@@ -1916,8 +2109,11 @@
 	#event-nav {
 		position: relative;
 		height: 40px;
-		background-color: #007294;
-		margin: 40px 0;
+		background-image: -moz-linear-gradient(top, #000099, #008dab);
+		background-image: -webkit-linear-gradient(top, #000099, #008dab);
+		background-image: -ms-linear-gradient(top, #000099, #008dab);
+		background-image: linear-gradient(top, #000099, #008dab);
+		background-color: #000099;
 	}
 
 	#event-nav li {
@@ -1927,15 +2123,22 @@
 	}
 
 	#event-nav a {
+		text-decoration: none;
+	}
+
+	#event-nav a {
 		margin: 0 20px; 
 		color: #fff;
 	}
 
-	#conect {
+	#container-connect {
 		position: relative;
 		height: 40px;
-		background-color: #007294;
-		margin: 40px 0;
+		background-image: -moz-linear-gradient(top, #000099, #008dab);
+		background-image: -webkit-linear-gradient(top, #008dab, #000099);
+		background-image: -ms-linear-gradient(top, #008dab, #000099);
+		background-image: linear-gradient(top, #008dab, #000099);
+		background-color: #000099;
 	}
 
 /* Catalog */
